@@ -189,7 +189,7 @@ public class ExampleMod
 
         private void sendCommand(String command) {
             if (player != null) {
-                player.connection.sendCommand(command);
+                player.getConnection().sendCommand(command);
                 LOGGER.info("Command sent: /{}", command);
             }
             this.onClose();
